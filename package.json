@@ -2,9 +2,10 @@
   "name": "react-page-slider",
   "version": "1.0.0",
   "description": "Page slider module for react.",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rollup -c"
   },
   "repository": {
     "type": "git",
@@ -32,10 +33,16 @@
     "@types/react-dom": "^16.9.5",
     "@typescript-eslint/eslint-plugin": "^2.21.0",
     "@typescript-eslint/parser": "^2.21.0",
+    "babel-preset-react-app": "^9.1.1",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-react": "^7.18.3",
+    "rollup": "^1.32.0",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-peer-deps-external": "^2.2.2",
     "typescript": "^3.8.3"
   },
   "peerDependencies": {
@@ -43,6 +50,7 @@
     "react-dom": "^16.12.0"
   },
   "dependencies": {
+    "@types/classnames": "^2.2.9",
     "classnames": "^2.2.6"
   }
 }
