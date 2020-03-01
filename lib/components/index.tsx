@@ -1,5 +1,6 @@
 import React, { useState, useMemo, useCallback } from 'react';
 
+import '../styles/main.css';
 import * as utils from '../utils';
 
 import Slider from './Slider';

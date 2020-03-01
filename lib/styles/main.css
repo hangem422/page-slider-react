@@ -1,0 +1,92 @@
+@charset "utf-8";
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  overflow: hidden;
+}
+#root,
+.App {
+  height: 100%;
+}
+.page-slider {
+  position: relative;
+  height: 100%;
+}
+.page-slider .page-slider-item {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  -webkit-transition: top 0.4s ease-in-out, left 0.2s ease-in-out;
+  transition: top 0.4s ease-in-out, left 0.2s ease-in-out;
+}
+.page-slider .page-slider-nav {
+  position: absolute;
+  z-index: 9999;
+  -webkit-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+  display: flex;
+  justify-content: center;
+}
+.page-slider .page-slider-nav.top {
+  top: 1em;
+}
+.page-slider .page-slider-nav.right {
+  right: 1em;
+}
+.page-slider .page-slider-nav.bottom {
+  bottom: 1em;
+}
+.page-slider .page-slider-nav.left {
+  left: 1em;
+}
+.page-slider .page-slider-nav.bottom,
+.page-slider .page-slider-nav.top {
+  flex-direction: row;
+  width: 100%;
+}
+.page-slider .page-slider-nav.bottom .nav-button:nth-child(n + 2),
+.page-slider .page-slider-nav.top .nav-button:nth-child(n + 2) {
+  margin-left: 0.5em;
+}
+.page-slider .page-slider-nav.left,
+.page-slider .page-slider-nav.right {
+  flex-direction: column;
+  height: 100%;
+}
+.page-slider .page-slider-nav.left .nav-button:nth-child(n + 2),
+.page-slider .page-slider-nav.right .nav-button:nth-child(n + 2) {
+  margin-top: 0.5em;
+}
+.page-slider .page-slider-nav.hide {
+  opacity: 0;
+}
+.page-slider .page-slider-nav .nav-button {
+  width: 1em;
+  height: 1em;
+  padding: 0.5em;
+  border: none;
+  background-color: transparent;
+  -webkit-tap-highlight-color: transparent;
+  outline: none !important;
+  cursor: pointer;
+}
+.page-slider .page-slider-nav .nav-button circle {
+  fill: rgba(0, 0, 0, 0.38);
+  -webkit-transition: fill 0.2s ease-in-out;
+  transition: fill 0.2s ease-in-out;
+}
+.page-slider .page-slider-nav .nav-button.highlight circle {
+  fill: rgba(0, 0, 0, 0.6);
+}
+.page-slider .page-slider-nav .nav-button.white circle {
+  fill: hsla(0, 0%, 100%, 0.38);
+}
+.page-slider .page-slider-nav .nav-button.white.highlight circle {
+  fill: hsla(0, 0%, 100%, 0.6);
+}
