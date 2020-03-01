@@ -5,6 +5,8 @@ import external from 'rollup-plugin-peer-deps-external';
 import postcss from 'rollup-plugin-postcss';
 import cssimport from 'postcss-import';
 import autoprefixer from 'autoprefixer';
+import svgr from '@svgr/rollup';
+import url from 'rollup-plugin-url';
 
 import pkg from './package.json';
 
@@ -19,6 +21,8 @@ export default {
     commonjs({ include: 'node_modules/**' }),
     babel({ extensions, include: ['lib/**/*'], runtimeHelpers: true }),
     postcss({ plugins: [cssimport(), autoprefixer()] }),
+    url(),
+    svgr(),
   ],
   output: [
     {
