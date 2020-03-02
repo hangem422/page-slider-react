@@ -5,7 +5,7 @@ interface NavProps {
   index: number;
   position: number;
   options: {
-    type: 'top' | 'bottom' | 'right' | 'left';
+    type: 'top' | 'bottom' | 'right' | 'left' | 'none';
     hide: boolean;
     timer: number;
     size: number;

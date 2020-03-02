@@ -13,7 +13,7 @@ interface PageSliderProps {
   actionFlagTime: number;
   sensitivity: number;
   navigation: {
-    type?: 'top' | 'bottom' | 'right' | 'left';
+    type?: 'top' | 'bottom' | 'right' | 'left' | 'none';
     hide?: boolean;
     timer?: number;
     size?: number;
@@ -33,7 +33,7 @@ function PageSlider({
 
   const navOptions = useMemo(
     () => ({
-      type: navigation.type || 'bottom',
+      type: navigation.type || 'none',
       hide: navigation.hide || false,
       timer: navigation.timer || 200,
       size: navigation.size || 16,
@@ -80,7 +80,7 @@ PageSlider.defaultProps = {
   horizontal: false,
   actionFlagTime: 500,
   sensitivity: 100,
-  navigation: { type: 'bottom', hide: false, timer: 200, size: 16, unit: 'px' },
+  navigation: { type: 'none', hide: false, timer: 200, size: 16, unit: 'px' },
 };
 
 export default PageSlider;

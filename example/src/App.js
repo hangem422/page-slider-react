@@ -25,10 +25,7 @@ function App() {
 
   return (
     <div className="App">
-      <PageSlider
-        compList={compList}
-        navigation={{ type: 'right', hide: false, size: 16 }}
-      />
+      <PageSlider compList={compList} />
     </div>
   );
 }

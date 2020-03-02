@@ -33,6 +33,9 @@ body {
   display: flex;
   justify-content: center;
 }
+.page-slider .page-slider-nav.none {
+  display: none;
+}
 .page-slider .page-slider-nav.top {
   top: 1em;
 }
