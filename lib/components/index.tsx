@@ -80,7 +80,7 @@ PageSlider.defaultProps = {
   horizontal: false,
   actionFlagTime: 500,
   sensitivity: 100,
-  navigation: { type: 'none', hide: false, timer: 200, size: 16, unit: 'px' },
+  navigation: { type: 'none', hide: false, timer: 2000, size: 16, unit: 'px' },
 };
 
 export default PageSlider;
