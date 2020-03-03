@@ -79,7 +79,7 @@ function PageSlider({
 PageSlider.defaultProps = {
   horizontal: false,
   actionFlagTime: 500,
-  sensitivity: 100,
+  sensitivity: 80,
   navigation: { type: 'none', hide: false, timer: 2000, size: 16, unit: 'px' },
 };
 
