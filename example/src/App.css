@@ -1,0 +1,26 @@
+.test-comp {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+.test-comp.num1 {
+  background-color: #ffebee;
+}
+.test-comp.num2 {
+  background-color: #f3e5f5;
+}
+.test-comp.num3 {
+  background-color: #e8eaf6;
+}
+.test-comp.num4 {
+  background-color: #e1f5fe;
+}
+.test-comp.num5 {
+  background-color: #e0f2f1;
+}
+.test-comp.num6 {
+  background-color: #f1f8e9;
+}

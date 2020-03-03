@@ -7,6 +7,8 @@ import TestComp03 from './components/TestComp03';
 import TestComp04 from './components/TestComp04';
 import TestComp05 from './components/TestComp05';
 
+import './App.css';
+
 function App() {
   const compList = useMemo(
     () => [
