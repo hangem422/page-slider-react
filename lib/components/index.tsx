@@ -35,7 +35,7 @@ function PageSlider({
     () => ({
       type: navigation.type || 'none',
       hide: navigation.hide || false,
-      timer: navigation.timer || 200,
+      timer: navigation.timer || 2000,
       size: navigation.size || 16,
       unit: navigation.unit || 'px',
     }),
