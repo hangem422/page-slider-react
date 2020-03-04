@@ -1,5 +1,5 @@
 {
-  "name": "@hant/react-page-slider",
+  "name": "page-slider-react",
   "version": "1.0.0",
   "description": "Page slider module for react.",
   "main": "dist/index.js",
