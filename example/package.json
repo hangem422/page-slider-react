@@ -9,7 +9,7 @@
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-scripts": "3.4.0",
-    "@hant/react-page-slider": "file:.."
+    "page-slider-react": "file:.."
   },
   "scripts": {
     "start": "react-scripts start",

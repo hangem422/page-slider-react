@@ -1,6 +1,6 @@
 {
   "name": "page-slider-react",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Page slider module for react.",
   "main": "dist/index.js",
   "module": "dist/index.js",

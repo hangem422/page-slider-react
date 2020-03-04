@@ -9,13 +9,13 @@
 #### installing
 
 ```zsh
-$ npm install @hant/react-page-slider
+$ npm install page-slider-react
 ```
 
 #### Conditions
 
-- `@hant/react-page-slider` must always be in a component that is `100%` `width` and `height`.
-- `Css` embedded in `@hant/react-page-slider` contains code for adjusting the `height` of the elements to `100%`.
+- `page-slider-react` must always be in a component that is `100%` `width` and `height`.
+- `Css` embedded in `page-slider-react` contains code for adjusting the `height` of the elements to `100%`.
 
 ```css
 body,
@@ -51,7 +51,7 @@ export default TestComp01;
 
 ```JSX
 import React from 'react';
-import { PageSlider } from '@hant/react-page-slider';
+import { PageSlider } from 'page-slider-react';
 
 import TestComp from './components/TestComp';
 

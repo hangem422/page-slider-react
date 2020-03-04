@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react';
-import { PageSlider } from '@hant/react-page-slider';
+import { PageSlider } from 'page-slider-react';
 
 import TestComp01 from './components/TestComp01';
 import TestComp02 from './components/TestComp02';
