@@ -1,4 +1,4 @@
-# React Page Slider
+# Page Slider React
 
 > Full Screen React Page slider. Navigational bars, mouse wheels, and mobile touch are available. Supports asynchronous rendering of various types of components.
 
